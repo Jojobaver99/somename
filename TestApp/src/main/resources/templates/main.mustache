@@ -1,0 +1,20 @@
+<html>
+
+<body>
+ 
+    <div>Список сообщений</div>
+    <form method="post" action="filter">
+        <input type="text" name="filter">
+        <button type="submit">Найти</button>
+    </form>
+    {{#messages}}
+    <div>
+        <pre><strong>Авторы: </strong> {{author}}</pre>
+         <pre><strong>Книги: </strong> {{book}}</pre>
+    </div>
+    {{/messages}}
+    
+ 
+
+</body>
+</html>
